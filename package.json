@@ -1,0 +1,15 @@
+{
+  "name": "noiceland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch scss/styles.scss ./css/styles.css",
+    "build": "sass scss/styles.scss ./css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
