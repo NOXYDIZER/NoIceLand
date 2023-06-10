@@ -148,10 +148,32 @@ body {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 50px;
   padding-bottom: 90px;
+  column-gap: 20px;
 }
 
 main {
   border-top: 1px solid var(--separator-color);
+}
+
+footer {
+  background-color: #141414;
+}
+
+.footer__header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 100px 0 60px 0;
+}
+
+.rights {
+  font-family: "Libre Franklin";
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
 }
 
 /*# sourceMappingURL=styles.css.map */
