@@ -182,14 +182,92 @@ footer {
         align-items: flex-end;
         gap: 15px;
         padding: 100px 0 60px 0;
+        border-bottom: 1px solid #4d4d4d;
     }
 }
 
-.rights {
+@mixin footer__second__font() {
     font-family: 'Libre Franklin';
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #666666;
+}
+
+@mixin footer__main__font() {
+    font-family: 'Libre Franklin';
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.rights {
+    @include footer__second__font();
+}
+
+.category {
+    &__block {
+        @include footer__second__font();
+    }
+}
+
+.categories {
+    padding-bottom: 20px;
+    &__container {
+        padding: 60px 0 95px 0;
+    }
+
+    &__link {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 15px;
+    }
+
+    &__link a {
+        @include footer__main__font();
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+    }
+}
+
+footer>div.container {
+    border: none;
+}
+
+input {
+    @include footer__second__font();
+    padding: 18px 23px;
+    border: none;
+}
+
+.input {
+    display: flex;
+    &__button  {
+        font-family: 'Libre Franklin';
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 18px 23px;
+        background-color: #000000;
+        height: 12px;
+    }
+
+    &__button a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+.block1 {
+    flex: 3;
 }
