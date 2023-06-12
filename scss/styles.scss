@@ -48,6 +48,11 @@ body {
 
     &__item {
         @include link();
+        transition: 400ms;
+    }
+
+    &__item:hover {
+        color: rgb(255, 174, 0);
     }
 }
 
@@ -59,6 +64,7 @@ body {
     text-transform: uppercase;
     color: var(--category-text-color);
     text-decoration: none;
+    transition: 400ms;
 }
 
 .blogpost {
@@ -104,6 +110,7 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         color: var(--text-color);
+        transition: 400ms;
     }
 
     &__summary {
@@ -115,6 +122,20 @@ body {
     &__img {
         width: 100%;
         height: auto;
+        transition: 400ms;
+    }
+
+    &__img:hover {
+        transform: scale(105%);
+    }
+
+    &__link {
+        overflow: hidden;
+    }
+
+    &__author__link:hover,
+    .category:hover {
+        color: rgb(255, 174, 0);
     }
 }
 
@@ -151,6 +172,15 @@ body {
     &__button {
         text-align: center;
         padding-bottom: 111px;
+    }
+
+    &__button a {
+        transition: 400ms;
+    }
+
+    &__button a:hover {
+        background-color: var(--text-color);
+        color: var(--bg-color);
     }
 }
 
@@ -222,6 +252,7 @@ footer {
 
 .categories {
     padding-bottom: 20px;
+
     &__container {
         padding: 60px 0 95px 0;
     }
@@ -239,6 +270,11 @@ footer {
 
         &__bottom a {
             @include footer__main__font();
+            transition: 400ms;
+        }
+
+        &__bottom a:hover {
+            color: rgb(255, 174, 0);
         }
     }
 
@@ -290,8 +326,23 @@ input {
     &__button a {
         text-decoration: none;
         color: #FFFFFF;
+        transition: 400ms;
+    }
+
+    &__button a:hover {
+        transform: scale(120%);
     }
 }
 .block1 {
     flex: 3;
 }
+
+.link__item a {
+    transition: 400ms;
+}
+
+.link__item a:hover {
+    color: rgb(255, 174, 0);
+}
+
+
