@@ -409,6 +409,9 @@ input {
     .categories__link {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+@media (max-width: 410px) {
     
     .navigation__list {
         gap: 20px;
