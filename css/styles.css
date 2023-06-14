@@ -220,7 +220,7 @@ footer {
   padding-bottom: 20px;
 }
 .categories__container {
-  padding: 60px 0 95px 0;
+  padding: 60px 15px 95px 15px;
 }
 .categories__link {
   display: grid;
@@ -366,6 +366,9 @@ input {
 @media (max-width: 500px) {
   .categories__link {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .navigation__list {
+    gap: 20px;
   }
 }
 
