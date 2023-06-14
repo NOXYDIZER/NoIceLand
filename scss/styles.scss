@@ -309,20 +309,33 @@ input {
     width: 174px;
 }
 
+button {
+    box-sizing: border-box;
+    font-family: 'Libre Franklin';
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    padding: 18px 23px;
+    overflow: hidden;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid white;
+}
+
+button:focus {
+    color: rgb(255, 174, 0);
+}
+
 .input {
     display: flex;
-
-    &__button {
-        font-family: 'Libre Franklin';
-        font-size: 10px;
-        line-height: 12px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 18px 23px;
-        background-color: #000000;
-        height: 12px;
-    }
+    overflow: hidden;
 
     &__button a {
         text-decoration: none;
