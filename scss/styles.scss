@@ -159,7 +159,7 @@ body {
     text-transform: uppercase;
     color: var(--category-text-color);
     padding: 90px 0 30px 0;
-    border-top: 1px solid var(--separator-color) ;
+    border-top: 1px solid var(--separator-color);
 }
 
 .latest-posts {
@@ -311,7 +311,8 @@ input {
 
 .input {
     display: flex;
-    &__button  {
+
+    &__button {
         font-family: 'Libre Franklin';
         font-size: 10px;
         line-height: 12px;
@@ -333,6 +334,7 @@ input {
         transform: scale(120%);
     }
 }
+
 .block1 {
     flex: 3;
 }
@@ -345,4 +347,66 @@ input {
     color: rgb(255, 174, 0);
 }
 
+@media (max-width: 1197px) {
+    .blogpost__main {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
+@media (max-width: 1235px) {
+    .top-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .latest-posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .featured-posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 925px) {
+    .latest-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 825px) {
+    .top-posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 790px) {
+    .categories__item {
+        flex-direction: column;
+    }
+
+    .input {
+        justify-content: center;
+
+        &__block {
+            text-align: center;
+            padding-top: 70px;
+        }
+    }
+}
+
+@media (max-width: 621px) {
+    .latest-posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 607px) {
+    .categories__bottom {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .categories__link {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
