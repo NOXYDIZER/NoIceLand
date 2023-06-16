@@ -277,6 +277,7 @@ input {
   padding: 18px 23px;
   border: none;
   width: 174px;
+  outline: none;
 }
 
 button {
